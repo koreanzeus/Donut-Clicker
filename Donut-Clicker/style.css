@@ -1,0 +1,246 @@
+* {
+  font-family: "Press Start 2P", cursive;
+}
+
+body {
+  background-image: url("./img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+h1 {
+  color: rgb(255, 10, 141);
+
+  font-size: xxx-large;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: rgb(249, 32, 231);
+  text-shadow: 2px 2px 5px rgb(177, 174, 174);
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 70px;
+  font-size: 20px;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  width: 60%;
+  border-radius: 5px;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.content {
+  padding: 0 15px 0px 15px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 100%;
+  width: 97.8%;
+}
+
+h4 {
+  color: rgb(255, 10, 141);
+  text-shadow: 2px 2px 2px white;
+  text-align: center;
+  font-size: 30pt;
+  margin-bottom: 40px;
+  margin-top: -15px;
+}
+
+.donutButton {
+  display: flex;
+  width: 20%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: -10px;
+}
+
+.donutButton:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.donutButton:active {
+  transform: scale(1.05);
+}
+
+#reset-game-button {
+  display: flex;
+  width: 10%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  padding: 12px;
+  min-width: 30px;
+  height: 40px;
+  background-color: rgb(166, 0, 255);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+}
+
+#reset-game-button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#reset-game-button:active {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+#reset-game-button:focus {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+
+.upgrades {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+h2 {
+  color: rgb(255, 0, 217);
+  text-shadow: 2px 2px 2px white;
+  text-align: center;
+  font-size: 18pt;
+  margin-bottom: 0px;
+  margin-top: 1px;
+}
+
+.price {
+  color: rgb(98, 34, 245);
+  text-align: center;
+  font-size: 15pt;
+  margin-top: 5px;
+  margin-bottom: -5px;
+}
+
+#purchase-auto-clicker {
+  background-color: rgb(249, 32, 231);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  padding: 12px;
+}
+
+#purchase-auto-clicker:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#purchase-auto-clicker:active {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+#purchase-auto-clicker:focus {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+
+#purchase-click-multiplier {
+  background-color: rgb(249, 32, 231);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: medium;
+  padding: 12px;
+  margin-left: 10px;
+}
+
+#purchase-click-multiplier:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+#purchase-click-multiplier:active {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+#purchase-click-multiplier:focus {
+  transform: scale(1.05);
+  border: none;
+  outline: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 600px;
+    height: auto;
+    transform: scale(0.8);
+    font-size: scale(0.5);
+  }
+  .content {
+    width: 93%;
+  }
+  #reset-game-button {
+    width: 20%;
+  }
+}

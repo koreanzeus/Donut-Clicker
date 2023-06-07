@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap" rel="stylesheet" />
+    <title>Donut Maker</title>
+  </head>
+
+  <header>
+    <!-- Navigation menu -->
+    <nav>
+      <ul>
+        <li><a href="#" onclick="openModal('about')">About</a></li>
+        <li><a href="#" onclick="openModal('inspiration')">Inspiration</a></li>
+        <li><a href="#" onclick="openModal('contact')">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Modal for "About" -->
+    <div class="modal" id="aboutModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('about')">&times;</span>
+        <h2>About</h2>
+        <p>Info about Fred the baker</p>
+      </div>
+    </div>
+
+    <!-- Modal for "Inspiration" -->
+    <div class="modal" id="inspirationModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('inspiration')">&times;</span>
+        <h2>Inspiration</h2>
+        <p>This game, Donut Maker draws inspiration from the popular Cookie Clicker game</p>
+        <a href="https://orteil.dashnet.org/cookieclicker/">
+          <p>Cookie Clicker</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Modal for "Contact" -->
+    <div class="modal" id="contactModal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('contact')">&times;</span>
+        <h2>Contact</h2>
+        <p>
+          I'm John Kuk, a passionate software development engineer based in King of Prussia, Pennsylvania.<br />
+          I hope you enjoy this game
+        </p>
+        <a href="https://koreanzeus.github.io" target="_blank">Portfolio</a> <br />
+        <br />
+        <a href="https://github.com/koreanzeus" target="_blank">GitHub</a>
+      </div>
+    </div>
+
+    <!-- Heading for the game -->
+    <h1>Donut Maker</h1>
+    <h3>Welcome to Fred the Baker Baking Company. Time to make the Donuts!</h3>
+  </header>
+
+  <body>
+    <!-- Display the donut count -->
+    <h4><span class="donut-count">0</span> Donuts</h4>
+
+    <!-- Donut image button -->
+    <img src="./img/donut.png" name="donutButton" id="sound" alt="jsButton" class="donutButton" />
+
+    <!-- Upgrades section -->
+    <div class="upgrades">
+      <!-- Auto clicker upgrade -->
+      <div class="auto-clicker-upgrade">
+        <h3 class="price">Auto Clicker Price</h3>
+        <br />
+        <h2><span id="auto-clicker-price">100</span> Donuts</h2>
+        <br />
+        <button id="purchase-auto-clicker">Purchase Auto Clicker</button><br />
+        <h3 class="price">Total Purchased:</h3>
+        <br />
+        <h2><span id="auto-clickers-total">0</span></h2>
+        <br />
+      </div>
+
+      <!-- Click multiplier upgrade -->
+      <div class="click-multiplier-upgrade">
+        <h3 class="price">Click Multiplier Price</h3>
+        <br />
+        <h2><span id="click-multiplier-price">10</span> Donuts</h2>
+        <br />
+        <button id="purchase-click-multiplier">Purchase Click Multiplier</button><br />
+        <h3 class="price">Total Purchased:</h3>
+        <br />
+        <h2><span id="click-multiplier">0</span></h2>
+      </div>
+    </div>
+
+    <!-- Reset game button -->
+    <button id="reset-game-button">Reset</button>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <script type="text/javascript" src="DonutButtonSound.mp3"></script>
+  </body>
+</html>
